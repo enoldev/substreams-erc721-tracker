@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package erc721.transfers.v1;
+
+message Transfers {
+  repeated Transfer transfers = 1;
+}
+
+message Transfer {
+    string from = 4;
+    string to = 5;
+}
